@@ -1,0 +1,616 @@
+[
+  {
+    "email": "intelligence@salesforce.com",
+    "nome": "Julia Smith",
+    "cargo": "Market Researcher",
+    "empresa": "Salesforce",
+    "setor": "Software",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Comparativo de Preços", "data": "2026-09-05"},
+      {"acao": "baixou_relatorio", "item": "Roadmap 2027", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Concorrente direto realizando espionagem industrial (Estrutura baseada no mock_leads.json[cite: 1])"
+  },
+  {
+    "email": "research@activecampaign.com",
+    "nome": "Mark Johnson",
+    "cargo": "Product Manager",
+    "empresa": "ActiveCampaign",
+    "setor": "Tecnologia",
+    "historico_interacoes": [
+      {"acao": "pediu_demo", "item": "Formulário de Contato Comercial", "data": "2026-09-04"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Concorrente pedindo demo (Risco de exposição de IP)"
+  },
+  {
+    "email": "data.team@zoho.com",
+    "nome": "Sarah Lee",
+    "cargo": "Analista de Dados",
+    "empresa": "Zoho",
+    "setor": "Software",
+    "historico_interacoes": [
+      {"acao": "baixou_ebook", "item": "Guia de CRM 2026", "data": "2026-09-01"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Concorrente consumindo materiais de topo de funil"
+  },
+  {
+    "email": "growth@pipedrive.com",
+    "nome": "Carlos Silva",
+    "cargo": "Growth Hacker",
+    "empresa": "Pipedrive",
+    "setor": "Vendas",
+    "historico_interacoes": [
+      {"acao": "assinou_newsletter", "item": "Dicas de Vendas", "data": "2026-08-30"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Concorrente monitorando comunicações de marketing"
+  },
+  {
+    "email": "test@rdstation.com",
+    "nome": "QA Tester",
+    "cargo": "Engenheiro de QA",
+    "empresa": "RD Station",
+    "setor": "Software",
+    "historico_interacoes": [
+      {"acao": "preencheu_formulario", "item": "Teste de Stress", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Concorrente (ou teste interno similar) gerando falsos positivos"
+  },
+  {
+    "email": "joao.estagiario@petrobras.com.br",
+    "nome": "João Pedro",
+    "cargo": "Estagiário",
+    "empresa": "Petrobras",
+    "setor": "Óleo e Gás",
+    "historico_interacoes": [
+      {"acao": "baixou_ebook", "item": "Automação de Marketing", "data": "2026-09-01"},
+      {"acao": "participou_webinar", "item": "Tendências 2027", "data": "2026-09-02"},
+      {"acao": "pediu_demo", "item": "Contato Comercial", "data": "2026-09-03"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Alto engajamento, empresa gigante, mas sem poder de decisão (Falso Positivo)"
+  },
+  {
+    "email": "maria.trainee@itau-unibanco.com.br",
+    "nome": "Maria Eduarda",
+    "cargo": "Trainee",
+    "empresa": "Itaú",
+    "setor": "Financeiro",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Preços", "data": "2026-09-04"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Empresa Tier 1, cargo júnior, intenção de compra incerta"
+  },
+  {
+    "email": "lucas.aprendiz@ambev.com.br",
+    "nome": "Lucas Almeida",
+    "cargo": "Jovem Aprendiz",
+    "empresa": "Ambev",
+    "setor": "Bebidas",
+    "historico_interacoes": [
+      {"acao": "baixou_relatorio", "item": "Mercado de Consumo", "data": "2026-08-15"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Cargo de entrada corporativo em pesquisa de mercado"
+  },
+  {
+    "email": "ana.bolsista@usp.br",
+    "nome": "Ana Costa",
+    "cargo": "Bolsista de Pesquisa",
+    "empresa": "USP",
+    "setor": "Educação",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Cases de Sucesso", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Setor acadêmico investigando cases (Fim de pesquisa, não compra)"
+  },
+  {
+    "email": "pedro.auxiliar@vale.com",
+    "nome": "Pedro Gomes",
+    "cargo": "Auxiliar Administrativo",
+    "empresa": "Vale",
+    "setor": "Mineração",
+    "historico_interacoes": [
+      {"acao": "assinou_newsletter", "item": "Blog", "data": "2026-09-01"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Cargo de suporte corporativo com baixo engajamento"
+  },
+  {
+    "email": "bruno@fintechx.com.br",
+    "nome": "Bruno Dias",
+    "cargo": "Líder de Tribo",
+    "empresa": "Fintech X",
+    "setor": "Financeiro",
+    "historico_interacoes": [
+      {"acao": "baixou_ebook", "item": "Gestão Ágil de Marketing", "data": "2026-09-03"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Cargo não convencional (Tribal Leader/Agile), testar inferência de senioridade"
+  },
+  {
+    "email": "camila@startupagil.com",
+    "nome": "Camila Rocha",
+    "cargo": "Chief Happiness Officer",
+    "empresa": "Startup Ágil",
+    "setor": "RH",
+    "historico_interacoes": [
+      {"acao": "pediu_demo", "item": "Módulo de Endomarketing", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Cargo não convencional focado em RH, pedindo demo de caso de uso específico"
+  },
+  {
+    "email": "vendas@agenciatop.com.br",
+    "nome": "Igor Vendedor",
+    "cargo": "Ninja das Vendas",
+    "empresa": "Agência Top",
+    "setor": "Publicidade",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Planos e Preços", "data": "2026-09-04"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Cargo não convencional (Gíria comercial), A IA deve entender que é um Vendedor"
+  },
+  {
+    "email": "marcos@dataops.io",
+    "nome": "Marcos Lima",
+    "cargo": "Evangelista de Dados",
+    "empresa": "DataOps",
+    "setor": "Tecnologia",
+    "historico_interacoes": [
+      {"acao": "participou_webinar", "item": "IA no CRM", "data": "2026-08-25"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Cargo de Developer Relations / Tech Advocate. Influenciador, não necessariamente comprador."
+  },
+  {
+    "email": "contato@pequenonegocio.com.br",
+    "nome": "José Silva",
+    "cargo": "Faz-tudo",
+    "empresa": "Pequeno Negócio",
+    "setor": "Serviços",
+    "historico_interacoes": [
+      {"acao": "iniciou_trial", "item": "Plano Free", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Cargo não convencional (Ambiguidade de pequena empresa, age como dono)"
+  },
+  {
+    "email": "misterio@empresa.com",
+    "nome": "Lead Sem Cargo",
+    "cargo": null,
+    "empresa": "Empresa S.A",
+    "setor": "Varejo",
+    "historico_interacoes": [
+      {"acao": "baixou_ebook", "item": "Vendas B2B", "data": "2026-09-01"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Resiliência: Campo 'cargo' nulo"
+  },
+  {
+    "email": "anonimo@gmail.com",
+    "nome": "Anon",
+    "cargo": "Diretor",
+    "empresa": null,
+    "setor": null,
+    "historico_interacoes": [
+      {"acao": "pediu_demo", "item": "Demo B2B", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Resiliência: Empresa e Setor nulos. IA deve pesar cargo vs falta de dados da empresa"
+  },
+  {
+    "email": "vazio@vazio.com",
+    "nome": "",
+    "cargo": "",
+    "empresa": "",
+    "setor": "",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Home", "data": "2026-09-01"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Resiliência: Strings vazias ao invés de nulos"
+  },
+  {
+    "email": "semhistorico@corporacao.com",
+    "nome": "Roberto Sem Rastro",
+    "cargo": "CFO",
+    "empresa": "Corporação",
+    "setor": "Finanças",
+    "historico_interacoes": [],
+    "score_atual": 0,
+    "cenario_teste": "Resiliência: Histórico de interações vazio, porém cargo C-level"
+  },
+  {
+    "email": "fantasma@dominio.com",
+    "nome": null,
+    "cargo": null,
+    "empresa": null,
+    "setor": null,
+    "historico_interacoes": null,
+    "score_atual": 0,
+    "cenario_teste": "Resiliência Crítica: Apenas email presente, todos os outros campos são null"
+  },
+  {
+    "email": "mariadoces2026@gmail.com",
+    "nome": "Maria Souza",
+    "cargo": "Dona",
+    "empresa": "Doceria da Maria",
+    "setor": "Alimentação",
+    "historico_interacoes": [
+      {"acao": "baixou_ebook", "item": "Como atrair clientes no Instagram", "data": "2026-09-02"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Email genérico (Gmail) com perfil de microempreendedor"
+  },
+  {
+    "email": "carlos_vendedor_matador@hotmail.com",
+    "nome": "Carlos Vendedor",
+    "cargo": "Vendedor",
+    "empresa": "Autônomo",
+    "setor": "Vendas",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Preços", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Email genérico legado (Hotmail) com cargo de execução"
+  },
+  {
+    "email": "lucas.designer.freela@yahoo.com",
+    "nome": "Lucas Designer",
+    "cargo": "Freelancer",
+    "empresa": "Eu Mesmo",
+    "setor": "Design",
+    "historico_interacoes": [
+      {"acao": "baixou_relatorio", "item": "Design Trends 2027", "data": "2026-08-20"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Email genérico (Yahoo), Autônomo sem fit para CRM B2B Enterprise"
+  },
+  {
+    "email": "contato@portaldenoticias.bol.com.br",
+    "nome": "Redação",
+    "cargo": "Jornalista",
+    "empresa": "Portal de Notícias",
+    "setor": "Mídia",
+    "historico_interacoes": [
+      {"acao": "assinou_newsletter", "item": "PR Updates", "data": "2026-09-01"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Email genérico/legado de veículo de mídia, sem intenção de compra do software"
+  },
+  {
+    "email": "admin@empresa.com.br",
+    "nome": "Administrador",
+    "cargo": "Suporte TI",
+    "empresa": "Empresa Genérica",
+    "setor": "Tecnologia",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Esqueci minha senha", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Email de role/departamento em vez de pessoa física, comportamento de usuário atual"
+  },
+  {
+    "email": "pastor.joao@igrejacentral.org",
+    "nome": "João Alves",
+    "cargo": "Pastor Presidente",
+    "empresa": "Igreja Central",
+    "setor": "Religião",
+    "historico_interacoes": [
+      {"acao": "pediu_demo", "item": "Gestão de Membros", "data": "2026-09-04"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Setor fora do contexto corporativo padrão (B2B), avaliando adaptabilidade da IA"
+  },
+  {
+    "email": "tecnico@clubefutebol.com.br",
+    "nome": "Mário Jorge",
+    "cargo": "Técnico",
+    "empresa": "Clube de Futebol Amador",
+    "setor": "Esportes",
+    "historico_interacoes": [
+      {"acao": "baixou_ebook", "item": "Engajamento de Torcedores", "data": "2026-09-02"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Setor esportivo, cargo executivo no esporte mas não em negócios"
+  },
+  {
+    "email": "presidencia@sindicatodosmotoristas.org",
+    "nome": "Antônio",
+    "cargo": "Presidente",
+    "empresa": "Sindicato dos Motoristas",
+    "setor": "Sindical",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Disparo de Emails", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Entidade de classe, alto poder de decisão, viés de uso para comunicação em massa"
+  },
+  {
+    "email": "gabinete@prefeituradeinterior.sp.gov.br",
+    "nome": "Assessoria",
+    "cargo": "Chefe de Gabinete",
+    "empresa": "Prefeitura",
+    "setor": "Governo",
+    "historico_interacoes": [
+      {"acao": "pediu_demo", "item": "Licitação", "data": "2026-09-01"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Setor público (B2G), processo de compra via licitação, não self-service"
+  },
+  {
+    "email": "voluntario@onganimais.org",
+    "nome": "Bárbara",
+    "cargo": "Coordenadora de Voluntários",
+    "empresa": "ONG Animais",
+    "setor": "Terceiro Setor",
+    "historico_interacoes": [
+      {"acao": "iniciou_trial", "item": "Plano Free para ONGs", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Terceiro setor buscando descontos ou planos gratuitos (Baixo ticket)"
+  },
+  {
+    "email": "cto@fintechy.com.br",
+    "nome": "Felipe Tech",
+    "cargo": "CTO",
+    "empresa": "Fintech Y",
+    "setor": "Financeiro",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Documentação REST API", "data": "2026-09-04"},
+      {"acao": "acessou_pagina", "item": "Webhooks", "data": "2026-09-04"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Perfil C-Level estritamente técnico validando integração, não avaliando marketing"
+  },
+  {
+    "email": "secops@bancoz.com",
+    "nome": "Letícia Hacker",
+    "cargo": "CISO",
+    "empresa": "Banco Z",
+    "setor": "Bancário",
+    "historico_interacoes": [
+      {"acao": "baixou_relatorio", "item": "Certificações ISO e LGPD", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Perfil de Segurança (CISO) focado em compliance (Blocker de vendas, não buyer)"
+  },
+  {
+    "email": "dba@varejao.com.br",
+    "nome": "Ricardo Dados",
+    "cargo": "DBA Sênior",
+    "empresa": "Varejão",
+    "setor": "Varejo",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Exportação de Dados em Massa", "data": "2026-09-01"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Engenheiro avaliando saída de dados/migração"
+  },
+  {
+    "email": "qa@systemtest.com",
+    "nome": "Automação Selenium",
+    "cargo": "QA Automation Engineer",
+    "empresa": "System Test",
+    "setor": "Consultoria",
+    "historico_interacoes": [
+      {"acao": "preencheu_formulario", "item": "Contato", "data": "2026-09-05"},
+      {"acao": "preencheu_formulario", "item": "Contato", "data": "2026-09-05"},
+      {"acao": "preencheu_formulario", "item": "Contato", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Comportamento de Bot/Script de testes inundando o formulário na mesma data"
+  },
+  {
+    "email": "ds@startupai.com",
+    "nome": "Alan Turing",
+    "cargo": "Data Scientist",
+    "empresa": "Startup AI",
+    "setor": "Inteligência Artificial",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Como usamos Machine Learning no Lead Scoring", "data": "2026-09-02"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Curiosidade técnica sobre a feature de IA, sem interesse na solução de CRM B2B"
+  },
+  {
+    "email": "desesperado@vendas.com.br",
+    "nome": "Thiago Urgente",
+    "cargo": "Gerente de Vendas",
+    "empresa": "Comércio Urgente",
+    "setor": "Comércio",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Preços", "data": "2026-09-05"},
+      {"acao": "baixou_ebook", "item": "Vendas Rápidas", "data": "2026-09-05"},
+      {"acao": "assistiu_video", "item": "Demo Express", "data": "2026-09-05"},
+      {"acao": "pediu_demo", "item": "Falar com Vendedor", "data": "2026-09-05"},
+      {"acao": "pediu_demo", "item": "Falar com Vendedor Urgente", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Anomalia temporal: Altíssimo volume de interações no mesmo dia (Hot Lead extremo)"
+  },
+  {
+    "email": "antigo@fantasma.com",
+    "nome": "Velho Lead",
+    "cargo": "Diretor",
+    "empresa": "Indústria Fantasma",
+    "setor": "Manufatura",
+    "historico_interacoes": [
+      {"acao": "baixou_ebook", "item": "Guia 2021", "data": "2021-01-15"},
+      {"acao": "pediu_demo", "item": "Formulário", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Anomalia temporal: Lead adormecido por 5 anos, reengajado subitamente hoje"
+  },
+  {
+    "email": "indeciso@ecommerce.com.br",
+    "nome": "Pedro Indeciso",
+    "cargo": "E-commerce Manager",
+    "empresa": "Loja Virtual",
+    "setor": "Varejo",
+    "historico_interacoes": [
+      {"acao": "cancelou_trial", "item": "Fim do período gratuito", "data": "2026-09-04"},
+      {"acao": "pediu_demo", "item": "Quero comprar agora", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Anomalia de intenção: Cancelou ontem e pediu demo/compra hoje"
+  },
+  {
+    "email": "arrependido@blog.com",
+    "nome": "Leitor Arrependido",
+    "cargo": "Estudante",
+    "empresa": "Nenhuma",
+    "setor": "Educação",
+    "historico_interacoes": [
+      {"acao": "assinou_newsletter", "item": "Blog", "data": "2026-09-05"},
+      {"acao": "descadastrou_email", "item": "Unsubscribe", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Anomalia de intenção: Assinou e descadastrou no mesmo dia"
+  },
+  {
+    "email": "reclamacao@cliente.com.br",
+    "nome": "Cliente Bravo",
+    "cargo": "Dono",
+    "empresa": "Cliente Insatisfeito",
+    "setor": "Serviços",
+    "historico_interacoes": [
+      {"acao": "abriu_ticket", "item": "Reclamação Procon", "data": "2026-09-01"},
+      {"acao": "acessou_pagina", "item": "Cancelamento", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Risco de Churn mascarado de engajamento (A IA não deve pontuar positivo para ticket de suporte)"
+  },
+  {
+    "email": "ceo@mei.com.br",
+    "nome": "João MEI",
+    "cargo": "CEO",
+    "empresa": "João Entregas MEI",
+    "setor": "Logística",
+    "historico_interacoes": [
+      {"acao": "pediu_demo", "item": "Preços B2B", "data": "2026-09-02"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Cargo C-Level inflado: CEO de um MEI (Baixíssimo orçamento real)"
+  },
+  {
+    "email": "founder@preseed.io",
+    "nome": "Alice Founder",
+    "cargo": "Founder & CEO",
+    "empresa": "Ideia Genial (Pre-Seed)",
+    "setor": "Tecnologia",
+    "historico_interacoes": [
+      {"acao": "baixou_relatorio", "item": "Growth para Startups", "data": "2026-09-04"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "C-Level sem orçamento atual (Startup em fase de ideação)"
+  },
+  {
+    "email": "diretor@padariadoze.com.br",
+    "nome": "Zé da Padaria",
+    "cargo": "Diretor Executivo",
+    "empresa": "Padaria do Zé",
+    "setor": "Alimentação",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Sistema de PDV", "data": "2026-09-01"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Cargo inflado no varejo tradicional local, sem fit para CRM complexo"
+  },
+  {
+    "email": "presidencia@bairro.org",
+    "nome": "Dona Maria",
+    "cargo": "Presidente",
+    "empresa": "Associação de Moradores",
+    "setor": "Comunidade",
+    "historico_interacoes": [
+      {"acao": "assinou_newsletter", "item": "Organização de Eventos", "data": "2026-08-10"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Presidente de associação local (Zero budget B2B, alto cargo semântico)"
+  },
+  {
+    "email": "socio@advocacia.com.br",
+    "nome": "Dr. Fernando",
+    "cargo": "Sócio Fundador",
+    "empresa": "Fernando Advogados Associados",
+    "setor": "Jurídico",
+    "historico_interacoes": [
+      {"acao": "baixou_ebook", "item": "Como prospectar clientes", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Profissional liberal / Sócio de pequeno escritório com necessidades muito nichadas"
+  },
+  {
+    "email": "cmo@xpinvestimentos.com.br",
+    "nome": "Laura Marques",
+    "cargo": "CMO",
+    "empresa": "XP Investimentos",
+    "setor": "Financeiro",
+    "historico_interacoes": [
+      {"acao": "pediu_demo", "item": "Solução Enterprise", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Golden Lead: Perfil ideal perfeito para testar o limite superior de pontuação"
+  },
+  {
+    "email": "vp.sales@totvs.com.br",
+    "nome": "Roberto Carlos",
+    "cargo": "VP of Sales",
+    "empresa": "TOTVS",
+    "setor": "Tecnologia",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Integração ERP", "data": "2026-09-03"},
+      {"acao": "pediu_demo", "item": "Contato Comercial", "data": "2026-09-04"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Golden Lead: Alto cargo, empresa gigante, buscando integração de alto nível"
+  },
+  {
+    "email": "growth@nubank.com.br",
+    "nome": "Camila Silva",
+    "cargo": "Diretora de Crescimento",
+    "empresa": "Nubank",
+    "setor": "Financeiro",
+    "historico_interacoes": [
+      {"acao": "baixou_relatorio", "item": "Tendências de Automação B2C", "data": "2026-09-01"},
+      {"acao": "participou_webinar", "item": "Métricas de Growth", "data": "2026-09-02"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Golden Lead: Empresa decacórnio, decision maker, alto engajamento"
+  },
+  {
+    "email": "head.inbound@natura.net",
+    "nome": "Beatriz Inbound",
+    "cargo": "Head de Inbound Marketing",
+    "empresa": "Natura",
+    "setor": "Cosméticos",
+    "historico_interacoes": [
+      {"acao": "acessou_pagina", "item": "Preços Corporativos", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Golden Lead: Cargo exatamente no ICP (Ideal Customer Profile) analisando preços"
+  },
+  {
+    "email": "gerente.marketing@embraer.com.br",
+    "nome": "Rodrigo Aviação",
+    "cargo": "Gerente de Marketing B2B",
+    "empresa": "Embraer",
+    "setor": "Aviação",
+    "historico_interacoes": [
+      {"acao": "baixou_ebook", "item": "ABM - Account Based Marketing", "data": "2026-08-20"},
+      {"acao": "acessou_pagina", "item": "Cases de Indústria", "data": "2026-09-01"},
+      {"acao": "pediu_demo", "item": "Implantação Enterprise", "data": "2026-09-05"}
+    ],
+    "score_atual": 0,
+    "cenario_teste": "Golden Lead: Jornada de compra madura, empresa multinacional, ICP Enterprise"
+  }
+]
