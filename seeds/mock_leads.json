@@ -1,5 +1,6 @@
 [
   {
+    "id_pessoa": 1,
     "email": "intelligence@salesforce.com",
     "nome": "Julia Smith",
     "cargo": "Market Researcher",
@@ -13,6 +14,7 @@
     "cenario_teste": "Concorrente direto realizando espionagem industrial (Estrutura baseada no mock_leads.json[cite: 1])"
   },
   {
+    "id_pessoa": 2,
     "email": "research@activecampaign.com",
     "nome": "Mark Johnson",
     "cargo": "Product Manager",
@@ -25,6 +27,7 @@
     "cenario_teste": "Concorrente pedindo demo (Risco de exposição de IP)"
   },
   {
+    "id_pessoa": 3,
     "email": "data.team@zoho.com",
     "nome": "Sarah Lee",
     "cargo": "Analista de Dados",
@@ -37,6 +40,7 @@
     "cenario_teste": "Concorrente consumindo materiais de topo de funil"
   },
   {
+    "id_pessoa": 4,
     "email": "growth@pipedrive.com",
     "nome": "Carlos Silva",
     "cargo": "Growth Hacker",
@@ -49,6 +53,7 @@
     "cenario_teste": "Concorrente monitorando comunicações de marketing"
   },
   {
+    "id_pessoa": 5,
     "email": "test@rdstation.com",
     "nome": "QA Tester",
     "cargo": "Engenheiro de QA",
@@ -61,6 +66,7 @@
     "cenario_teste": "Concorrente (ou teste interno similar) gerando falsos positivos"
   },
   {
+    "id_pessoa": 6,
     "email": "joao.estagiario@petrobras.com.br",
     "nome": "João Pedro",
     "cargo": "Estagiário",
@@ -75,6 +81,7 @@
     "cenario_teste": "Alto engajamento, empresa gigante, mas sem poder de decisão (Falso Positivo)"
   },
   {
+    "id_pessoa": 7,
     "email": "maria.trainee@itau-unibanco.com.br",
     "nome": "Maria Eduarda",
     "cargo": "Trainee",
@@ -87,6 +94,7 @@
     "cenario_teste": "Empresa Tier 1, cargo júnior, intenção de compra incerta"
   },
   {
+    "id_pessoa": 8,
     "email": "lucas.aprendiz@ambev.com.br",
     "nome": "Lucas Almeida",
     "cargo": "Jovem Aprendiz",
@@ -99,6 +107,7 @@
     "cenario_teste": "Cargo de entrada corporativo em pesquisa de mercado"
   },
   {
+    "id_pessoa": 9,
     "email": "ana.bolsista@usp.br",
     "nome": "Ana Costa",
     "cargo": "Bolsista de Pesquisa",
@@ -111,6 +120,7 @@
     "cenario_teste": "Setor acadêmico investigando cases (Fim de pesquisa, não compra)"
   },
   {
+    "id_pessoa": 10,
     "email": "pedro.auxiliar@vale.com",
     "nome": "Pedro Gomes",
     "cargo": "Auxiliar Administrativo",
@@ -123,6 +133,7 @@
     "cenario_teste": "Cargo de suporte corporativo com baixo engajamento"
   },
   {
+    "id_pessoa": 11,
     "email": "bruno@fintechx.com.br",
     "nome": "Bruno Dias",
     "cargo": "Líder de Tribo",
@@ -135,6 +146,7 @@
     "cenario_teste": "Cargo não convencional (Tribal Leader/Agile), testar inferência de senioridade"
   },
   {
+    "id_pessoa": 12,
     "email": "camila@startupagil.com",
     "nome": "Camila Rocha",
     "cargo": "Chief Happiness Officer",
@@ -147,6 +159,7 @@
     "cenario_teste": "Cargo não convencional focado em RH, pedindo demo de caso de uso específico"
   },
   {
+    "id_pessoa": 13,
     "email": "vendas@agenciatop.com.br",
     "nome": "Igor Vendedor",
     "cargo": "Ninja das Vendas",
@@ -159,6 +172,7 @@
     "cenario_teste": "Cargo não convencional (Gíria comercial), A IA deve entender que é um Vendedor"
   },
   {
+    "id_pessoa": 14,
     "email": "marcos@dataops.io",
     "nome": "Marcos Lima",
     "cargo": "Evangelista de Dados",
@@ -171,6 +185,7 @@
     "cenario_teste": "Cargo de Developer Relations / Tech Advocate. Influenciador, não necessariamente comprador."
   },
   {
+    "id_pessoa": 15,
     "email": "contato@pequenonegocio.com.br",
     "nome": "José Silva",
     "cargo": "Faz-tudo",
@@ -183,6 +198,7 @@
     "cenario_teste": "Cargo não convencional (Ambiguidade de pequena empresa, age como dono)"
   },
   {
+    "id_pessoa": 16,
     "email": "misterio@empresa.com",
     "nome": "Lead Sem Cargo",
     "cargo": null,
@@ -195,6 +211,7 @@
     "cenario_teste": "Resiliência: Campo 'cargo' nulo"
   },
   {
+    "id_pessoa": 17,
     "email": "anonimo@gmail.com",
     "nome": "Anon",
     "cargo": "Diretor",
@@ -207,8 +224,9 @@
     "cenario_teste": "Resiliência: Empresa e Setor nulos. IA deve pesar cargo vs falta de dados da empresa"
   },
   {
+    "id_pessoa": 18,
     "email": "vazio@vazio.com",
-    "nome": "",
+    "nome": "Lucas Ferreira",
     "cargo": "",
     "empresa": "",
     "setor": "",
@@ -219,6 +237,7 @@
     "cenario_teste": "Resiliência: Strings vazias ao invés de nulos"
   },
   {
+    "id_pessoa": 19,
     "email": "semhistorico@corporacao.com",
     "nome": "Roberto Sem Rastro",
     "cargo": "CFO",
@@ -229,8 +248,9 @@
     "cenario_teste": "Resiliência: Histórico de interações vazio, porém cargo C-level"
   },
   {
+    "id_pessoa": 20,
     "email": "fantasma@dominio.com",
-    "nome": null,
+    "nome": "Gabriel Santos",
     "cargo": null,
     "empresa": null,
     "setor": null,
@@ -239,6 +259,7 @@
     "cenario_teste": "Resiliência Crítica: Apenas email presente, todos os outros campos são null"
   },
   {
+    "id_pessoa": 21,
     "email": "mariadoces2026@gmail.com",
     "nome": "Maria Souza",
     "cargo": "Dona",
@@ -251,6 +272,7 @@
     "cenario_teste": "Email genérico (Gmail) com perfil de microempreendedor"
   },
   {
+    "id_pessoa": 22,
     "email": "carlos_vendedor_matador@hotmail.com",
     "nome": "Carlos Vendedor",
     "cargo": "Vendedor",
@@ -263,6 +285,7 @@
     "cenario_teste": "Email genérico legado (Hotmail) com cargo de execução"
   },
   {
+    "id_pessoa": 23,
     "email": "lucas.designer.freela@yahoo.com",
     "nome": "Lucas Designer",
     "cargo": "Freelancer",
@@ -275,6 +298,7 @@
     "cenario_teste": "Email genérico (Yahoo), Autônomo sem fit para CRM B2B Enterprise"
   },
   {
+    "id_pessoa": 24,
     "email": "contato@portaldenoticias.bol.com.br",
     "nome": "Redação",
     "cargo": "Jornalista",
@@ -287,6 +311,7 @@
     "cenario_teste": "Email genérico/legado de veículo de mídia, sem intenção de compra do software"
   },
   {
+    "id_pessoa": 25,
     "email": "admin@empresa.com.br",
     "nome": "Administrador",
     "cargo": "Suporte TI",
@@ -299,6 +324,7 @@
     "cenario_teste": "Email de role/departamento em vez de pessoa física, comportamento de usuário atual"
   },
   {
+    "id_pessoa": 26,
     "email": "pastor.joao@igrejacentral.org",
     "nome": "João Alves",
     "cargo": "Pastor Presidente",
@@ -311,6 +337,7 @@
     "cenario_teste": "Setor fora do contexto corporativo padrão (B2B), avaliando adaptabilidade da IA"
   },
   {
+    "id_pessoa": 27,
     "email": "tecnico@clubefutebol.com.br",
     "nome": "Mário Jorge",
     "cargo": "Técnico",
@@ -323,6 +350,7 @@
     "cenario_teste": "Setor esportivo, cargo executivo no esporte mas não em negócios"
   },
   {
+    "id_pessoa": 28,
     "email": "presidencia@sindicatodosmotoristas.org",
     "nome": "Antônio",
     "cargo": "Presidente",
@@ -335,6 +363,7 @@
     "cenario_teste": "Entidade de classe, alto poder de decisão, viés de uso para comunicação em massa"
   },
   {
+    "id_pessoa": 29,
     "email": "gabinete@prefeituradeinterior.sp.gov.br",
     "nome": "Assessoria",
     "cargo": "Chefe de Gabinete",
@@ -347,6 +376,7 @@
     "cenario_teste": "Setor público (B2G), processo de compra via licitação, não self-service"
   },
   {
+    "id_pessoa": 30,
     "email": "voluntario@onganimais.org",
     "nome": "Bárbara",
     "cargo": "Coordenadora de Voluntários",
@@ -359,6 +389,7 @@
     "cenario_teste": "Terceiro setor buscando descontos ou planos gratuitos (Baixo ticket)"
   },
   {
+    "id_pessoa": 31,
     "email": "cto@fintechy.com.br",
     "nome": "Felipe Tech",
     "cargo": "CTO",
@@ -372,6 +403,7 @@
     "cenario_teste": "Perfil C-Level estritamente técnico validando integração, não avaliando marketing"
   },
   {
+    "id_pessoa": 32,
     "email": "secops@bancoz.com",
     "nome": "Letícia Hacker",
     "cargo": "CISO",
@@ -384,6 +416,7 @@
     "cenario_teste": "Perfil de Segurança (CISO) focado em compliance (Blocker de vendas, não buyer)"
   },
   {
+    "id_pessoa": 33,
     "email": "dba@varejao.com.br",
     "nome": "Ricardo Dados",
     "cargo": "DBA Sênior",
@@ -396,6 +429,7 @@
     "cenario_teste": "Engenheiro avaliando saída de dados/migração"
   },
   {
+    "id_pessoa": 34,
     "email": "qa@systemtest.com",
     "nome": "Automação Selenium",
     "cargo": "QA Automation Engineer",
@@ -410,6 +444,7 @@
     "cenario_teste": "Comportamento de Bot/Script de testes inundando o formulário na mesma data"
   },
   {
+    "id_pessoa": 35,
     "email": "ds@startupai.com",
     "nome": "Alan Turing",
     "cargo": "Data Scientist",
@@ -422,6 +457,7 @@
     "cenario_teste": "Curiosidade técnica sobre a feature de IA, sem interesse na solução de CRM B2B"
   },
   {
+    "id_pessoa": 36,
     "email": "desesperado@vendas.com.br",
     "nome": "Thiago Urgente",
     "cargo": "Gerente de Vendas",
@@ -438,6 +474,7 @@
     "cenario_teste": "Anomalia temporal: Altíssimo volume de interações no mesmo dia (Hot Lead extremo)"
   },
   {
+    "id_pessoa": 37,
     "email": "antigo@fantasma.com",
     "nome": "Velho Lead",
     "cargo": "Diretor",
@@ -451,6 +488,7 @@
     "cenario_teste": "Anomalia temporal: Lead adormecido por 5 anos, reengajado subitamente hoje"
   },
   {
+    "id_pessoa": 38,
     "email": "indeciso@ecommerce.com.br",
     "nome": "Pedro Indeciso",
     "cargo": "E-commerce Manager",
@@ -464,6 +502,7 @@
     "cenario_teste": "Anomalia de intenção: Cancelou ontem e pediu demo/compra hoje"
   },
   {
+    "id_pessoa": 39,
     "email": "arrependido@blog.com",
     "nome": "Leitor Arrependido",
     "cargo": "Estudante",
@@ -477,6 +516,7 @@
     "cenario_teste": "Anomalia de intenção: Assinou e descadastrou no mesmo dia"
   },
   {
+    "id_pessoa": 40,
     "email": "reclamacao@cliente.com.br",
     "nome": "Cliente Bravo",
     "cargo": "Dono",
@@ -490,6 +530,7 @@
     "cenario_teste": "Risco de Churn mascarado de engajamento (A IA não deve pontuar positivo para ticket de suporte)"
   },
   {
+    "id_pessoa": 41,
     "email": "ceo@mei.com.br",
     "nome": "João MEI",
     "cargo": "CEO",
@@ -502,6 +543,7 @@
     "cenario_teste": "Cargo C-Level inflado: CEO de um MEI (Baixíssimo orçamento real)"
   },
   {
+    "id_pessoa": 42,
     "email": "founder@preseed.io",
     "nome": "Alice Founder",
     "cargo": "Founder & CEO",
@@ -514,6 +556,7 @@
     "cenario_teste": "C-Level sem orçamento atual (Startup em fase de ideação)"
   },
   {
+    "id_pessoa": 43,
     "email": "diretor@padariadoze.com.br",
     "nome": "Zé da Padaria",
     "cargo": "Diretor Executivo",
@@ -526,6 +569,7 @@
     "cenario_teste": "Cargo inflado no varejo tradicional local, sem fit para CRM complexo"
   },
   {
+    "id_pessoa": 44,
     "email": "presidencia@bairro.org",
     "nome": "Dona Maria",
     "cargo": "Presidente",
@@ -538,6 +582,7 @@
     "cenario_teste": "Presidente de associação local (Zero budget B2B, alto cargo semântico)"
   },
   {
+    "id_pessoa": 45,
     "email": "socio@advocacia.com.br",
     "nome": "Dr. Fernando",
     "cargo": "Sócio Fundador",
@@ -550,6 +595,7 @@
     "cenario_teste": "Profissional liberal / Sócio de pequeno escritório com necessidades muito nichadas"
   },
   {
+    "id_pessoa": 46,
     "email": "cmo@xpinvestimentos.com.br",
     "nome": "Laura Marques",
     "cargo": "CMO",
@@ -562,6 +608,7 @@
     "cenario_teste": "Golden Lead: Perfil ideal perfeito para testar o limite superior de pontuação"
   },
   {
+    "id_pessoa": 47,
     "email": "vp.sales@totvs.com.br",
     "nome": "Roberto Carlos",
     "cargo": "VP of Sales",
@@ -575,6 +622,7 @@
     "cenario_teste": "Golden Lead: Alto cargo, empresa gigante, buscando integração de alto nível"
   },
   {
+    "id_pessoa": 48,
     "email": "growth@nubank.com.br",
     "nome": "Camila Silva",
     "cargo": "Diretora de Crescimento",
@@ -588,6 +636,7 @@
     "cenario_teste": "Golden Lead: Empresa decacórnio, decision maker, alto engajamento"
   },
   {
+    "id_pessoa": 49,
     "email": "head.inbound@natura.net",
     "nome": "Beatriz Inbound",
     "cargo": "Head de Inbound Marketing",
@@ -600,6 +649,7 @@
     "cenario_teste": "Golden Lead: Cargo exatamente no ICP (Ideal Customer Profile) analisando preços"
   },
   {
+    "id_pessoa": 50,
     "email": "gerente.marketing@embraer.com.br",
     "nome": "Rodrigo Aviação",
     "cargo": "Gerente de Marketing B2B",

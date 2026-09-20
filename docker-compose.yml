@@ -11,7 +11,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U admin -d ${POSTGRES_DB}"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -31,15 +31,14 @@ services:
     volumes:
       - .:/app
     ports:
-      - "${APP_PORT}:8000"
+      - "${APP_PORT}:${APP_PORT}"
     depends_on:
       db:
         condition: service_healthy
       phoenix:
         condition: service_started
-    environment:
-      - DATABASE_URL=${DATABASE_URL}
-      - PHOENIX_COLLECTOR_ENDPOINT=${PHOENIX_COLLECTOR_ENDPOINT}
+    env_file:
+      - .env
     command: tail -f /dev/null
 
 volumes:
