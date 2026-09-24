@@ -7,6 +7,7 @@ class AppConfig(BaseSettings):
     APP_NAME: str = "Lead Intelligence"
     APP_HOST: str
     APP_PORT: int
+    APP_RELOAD: bool
 
     # Configurações do Banco de Dados
     POSTGRES_USER: str

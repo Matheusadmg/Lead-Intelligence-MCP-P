@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y libpq-dev gcc curl && rm -rf /var/lib/a
 
 RUN curl -sSL https://install.python-poetry.org | python3 -
 ENV PATH="/root/.local/bin:$PATH"
+ENV PYTHONPATH="/app/src"
 
 WORKDIR /app
 
