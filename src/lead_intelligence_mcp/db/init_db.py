@@ -17,8 +17,8 @@ async def init_seed_leads() -> None:
         json_seed = json.load(seed)
 
         async with async_session() as session:
-            is_populated = await session.execute(select(func.count()).select_from(LeadsModel))
-            if is_populated:
+            total_leads = await session.scalar(select(func.count()).select_from(LeadsModel))
+            if total_leads:
                 print("Banco já está populado")
                 return
 
@@ -40,7 +40,7 @@ async def init_seed_leads() -> None:
                             item=h["item"],
                             data=h["data"]
                         )
-                        for h in (item.get["historico_interacoes"] or [])
+                        for h in (item.get("historico_interacoes") or [])
                     ]
                 )
                 for item in json_seed
