@@ -10,13 +10,13 @@ settings = get_settings()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, Any]:
-    print("Iniciando aplicação TROCAR MENSAGEM TROCAR MENSAGEM TROCAR MENSAGEM TROCAR MENSAGEM TROCAR MENSAGEM ")
+    print("INFO: Iniciando aplicação")
 
     await init_db()
     yield
 
     await engine.dispose()
-    print("Finalizando aplicação TROCAR MENSAGEM TROCAR MENSAGEM TROCAR MENSAGEM TROCAR MENSAGEM TROCAR MENSAGEM ")
+    print("INFO: Finalizando aplicação")
 
 app=FastAPI(
     title=settings.APP_NAME,

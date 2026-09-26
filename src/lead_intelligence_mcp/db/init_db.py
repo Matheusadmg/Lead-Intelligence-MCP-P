@@ -19,10 +19,10 @@ async def init_seed_leads() -> None:
         async with async_session() as session:
             total_leads = await session.scalar(select(func.count()).select_from(LeadsModel))
             if total_leads:
-                print("Banco já está populado")
+                print("INFO: Banco já está populado")
                 return
 
-            print("Adicionando seeds mocadas ao banco...")
+            print("INFO: Adicionando seeds mocadas ao banco...")
 
             new_leads = [
                 LeadsModel(
@@ -48,7 +48,7 @@ async def init_seed_leads() -> None:
 
             session.add_all(new_leads)
             await session.commit()
-            print("Novos leads carregados com sucesso!")
+            print("INFO: Novos leads carregados com sucesso!")
 
 async def init_db() -> None:
     async with engine.begin() as conn:
