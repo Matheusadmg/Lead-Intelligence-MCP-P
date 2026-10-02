@@ -1,4 +1,5 @@
-from sqlalchemy import ForeignKey, String, Date
+from datetime import datetime
+from sqlalchemy import ForeignKey, String, DateTime
 from sqlalchemy.orm import Mapped, mapped_column
 from .base import Base
 
@@ -9,5 +10,5 @@ class HistoricoInteracoesModel(Base):
     id_pessoa: Mapped[int] = mapped_column(ForeignKey('leads.id_pessoa'))
     acao: Mapped[str] = mapped_column(String(50))
     item: Mapped[str] = mapped_column(String(50))
-    data: Mapped[str] = mapped_column(String(10))
+    data: Mapped[datetime] = mapped_column(DateTime)
 

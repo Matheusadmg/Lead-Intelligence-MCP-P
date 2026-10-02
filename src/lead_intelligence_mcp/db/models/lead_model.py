@@ -1,9 +1,9 @@
-from sqlalchemy import String, Integer
+from sqlalchemy import String, Float
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from .base import Base
 from .historico_interacoes_model import HistoricoInteracoesModel
 
-class LeadsModel(Base):
+class LeadModel(Base):
     __tablename__ = 'leads'
 
     id_pessoa: Mapped[int] = mapped_column(primary_key=True, autoincrement=False)
@@ -12,11 +12,10 @@ class LeadsModel(Base):
     cargo: Mapped[str | None] = mapped_column(String(50))
     empresa: Mapped[str | None] = mapped_column(String(50))
     setor: Mapped[str | None] = mapped_column(String(50))
-    score_atual: Mapped[int] = mapped_column(Integer)
+    score_atual: Mapped[float] = mapped_column(Float)
     cenario_teste: Mapped[str] = mapped_column(String(255))
     resultado_analise_ia: Mapped[str | None] = mapped_column(String(255))
-    historico: Mapped[list["HistoricoInteracoesModel"]] = relationship(
+    historico: Mapped[list["HistoricoInteracoesModel"] | None] = relationship(
         cascade="all, delete-orphan",
         lazy="selectin"
     )
-

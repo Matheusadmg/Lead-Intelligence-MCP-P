@@ -4,7 +4,7 @@ from sqlalchemy import select, func
 
 from .models.base import Base
 from .models.historico_interacoes_model import HistoricoInteracoesModel
-from .models.leads_model import LeadsModel
+from .models.lead_model import LeadModel
 from .session import async_session, engine
 
 SEED_PATH = Path(__file__).resolve().parents[3] / "seeds" / "mock_leads.json"
@@ -17,7 +17,7 @@ async def init_seed_leads() -> None:
         json_seed = json.load(seed)
 
         async with async_session() as session:
-            total_leads = await session.scalar(select(func.count()).select_from(LeadsModel))
+            total_leads = await session.scalar(select(func.count()).select_from(LeadModel))
             if total_leads:
                 print("INFO: Banco já está populado")
                 return
@@ -25,7 +25,7 @@ async def init_seed_leads() -> None:
             print("INFO: Adicionando seeds mocadas ao banco...")
 
             new_leads = [
-                LeadsModel(
+                LeadModel(
                     id_pessoa=item["id_pessoa"],
                     nome=item["nome"],
                     email=item["email"],
