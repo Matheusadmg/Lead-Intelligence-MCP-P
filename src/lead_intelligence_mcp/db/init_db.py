@@ -1,4 +1,5 @@
 import json
+from datetime import date
 from pathlib import Path
 from sqlalchemy import select, func
 
@@ -38,7 +39,7 @@ async def init_seed_leads() -> None:
                         HistoricoInteracoesModel(
                             acao=h["acao"],
                             item=h["item"],
-                            data=h["data"]
+                            data=date.fromisoformat(h["data"])
                         )
                         for h in (item.get("historico_interacoes") or [])
                     ]
