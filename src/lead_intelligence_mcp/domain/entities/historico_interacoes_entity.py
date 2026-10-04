@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date
 from dataclasses import dataclass
 
 
@@ -8,5 +8,5 @@ class HistoricoInteracoesEntity:
     id_pessoa: int
     acao: str
     item: str
-    data: datetime
+    data: date
 
