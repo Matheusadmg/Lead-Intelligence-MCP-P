@@ -1,9 +1,7 @@
 from datetime import date
-from dataclasses import dataclass
+from pydantic import BaseModel
 
-
-@dataclass
-class HistoricoInteracoesEntity:
+class HistoricoInteracoesEntity(BaseModel):
     id: int
     id_pessoa: int
     acao: str
